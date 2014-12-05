@@ -72,6 +72,9 @@ a:hover{
 
 .gallery-image{
     opacity:.15;
+    -moz-opacity: 0.15;
+    opacity:.15;
+    filter: alpha(opacity=15);
 }
 
 .gallery-overlay{
@@ -80,7 +83,9 @@ a:hover{
     height:100%;
     text-align: center;
     background-image:url("../img/trans-black-bg.png");
+    -moz-opacity: 0;
     opacity:0;
+    filter: alpha(opacity=0);
     z-index:10;
 }
 
