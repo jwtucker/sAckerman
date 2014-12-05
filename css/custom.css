@@ -11,6 +11,7 @@
 .navigation p:hover{
     color:#cccccc;
     cursor:pointer;
+    cursor:hand;
 }
 
 .title{
@@ -25,6 +26,7 @@
 
 .title h1:hover{
     cursor:pointer;
+    cursor:hand;
 }
 
 .title em{
@@ -42,6 +44,7 @@
 
 #click-overlay:hover{
     cursor:pointer;
+    cursor:hand;
 }
 
 .icons{
@@ -91,6 +94,7 @@ a:hover{
 
 .gallery-overlay:hover{
     cursor:pointer;
+    cursor:hand;
 }
 
 .gallery-overlay span{
