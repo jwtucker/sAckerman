@@ -35,7 +35,7 @@
 
 #click-overlay{
     position:absolute;
-    z-index: 999;
+    z-index: 995;
     width:100%;
     height:100%;
 }
@@ -51,4 +51,94 @@
 
 a:hover{
     text-decoration: none;
+}
+
+#wrapper-content{
+    width:100%;
+    height:100%;
+}
+
+#subsection{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding-left:14px;
+    padding-right:14px;
+    z-index:1;
+}
+
+
+.gallery-image{
+    opacity:.15;
+}
+
+.gallery-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-image:url("../img/trans-black-bg.png");
+    opacity:0;
+    z-index:10;
+}
+
+.gallery-overlay:hover{
+    cursor:pointer;
+}
+
+.gallery-overlay span{
+  position:relative;
+  top:60%;
+  color:white;
+  font-size:25px;
+}
+
+#contact{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding-left:20%;
+    padding-right:20%;
+    background-color:#dddddd;
+}
+
+#bio{
+    position:absolute;
+    width:100%;
+    height:400px;
+    display:inline;
+}
+
+#bio-left-column{
+    position:absolute;
+    width:50%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:#aaaaaa;
+}
+
+#bio-right-column{
+    position:absolute;
+    width:50%;
+    height:100%;
+    top:0;
+    left:50%;
+    background-color:#cccccc;
+    padding:10px;
+}
+
+#bio-right-column img{
+    width:65%;
+    float:left;
+    margin:8px;
+    padding:10px;
+}
+
+#gallery{
+    position:absolute;
+    width:100%;
+    z-index:0;
 }

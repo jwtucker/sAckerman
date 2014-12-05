@@ -9,8 +9,10 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/justifiedGallery.min.css">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600|Monoton' rel='stylesheet' type='text/css'>
     <script src="lib/jquery.js"></script>
+    <script src="lib/jquery.justifiedGallery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/jquery.slides.min.js"></script>
     <script src="lib/custom.js"></script>
@@ -45,33 +47,136 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row">
+    
         <div class="col-xs-2">
+
             <div class="navigation">
-                <a href="index.html"><p>Home</p></a>
-                <p>Portraits</p>
-                <p>Nature</p>
-                <p>Urban</p>
-                <p>Mountainscapes</p>
-                <p>Contact</p>
-                <p>Artist Bio</p>
+                <p id="link-home">Home</p>
+                <p id="link-painting">Paintings</p>
+                <p id="link-illustration">Illustrations</p>
+                <p id="link-photography">Photography</p>
+                <p id="link-sculpture">Sculpture</p>
+                <p id="link-contact">Contact</p>
+                <p id="link-bio">Artist Bio</p>
             </div>
+
         </div>
+
         <div class="col-xs-8">
-            <div class="content-wrapper">
-                <div id="click-overlay"></div>
-                <div id="slides">
-                   <img src="img/homepage/homepage-1.jpg" id="first-image">
-                   <img src="img/homepage/homepage-2.jpg">
-                   <img src="img/homepage/homepage-3.jpg">
-                   <img src="img/homepage/homepage-4.jpg">
-                   <img src="img/homepage/homepage-5.jpg">
+
+                <div id="wrapper-content">
+
+                    <div id="click-overlay"></div>
+
+                    <div id="slides">
+                       <img src="img/homepage/homepage-1.jpg" id="first-image">
+                       <img src="img/homepage/homepage-2.jpg">
+                       <img src="img/homepage/homepage-3.jpg">
+                       <img src="img/homepage/homepage-4.jpg">
+                       <img src="img/homepage/homepage-5.jpg">
+                    </div>
+
+                    <div id="subsection">
+                        <div id="subsectionGallery">
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-1_t.jpg">
+                                <div class="gallery-overlay"><span>Urban</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-2_t.jpg"/>
+                                <div class="gallery-overlay"><span>Scratches</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-3_t.jpg"/>
+                                <div class="gallery-overlay"><span>Amsterdam</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-4_t.jpg"/>
+                                <div class="gallery-overlay"><span>Illustration</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-5_t.jpg"/>
+                                <div class="gallery-overlay"><span>Color Field</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-1_t.jpg"/>
+                                <div class="gallery-overlay"><span>Switzerland</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-2_t.jpg"/>
+                                <div class="gallery-overlay"><span>Concept</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-3_t.jpg"/>
+                                <div class="gallery-overlay"><span>Austria</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-4_t.jpg"/>
+                                <div class="gallery-overlay"><span>Paris</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-5_t.jpg"/>
+                                <div class="gallery-overlay"><span>Figurative</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-1_t.jpg"/>
+                                <div class="gallery-overlay"><span>Nature</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-2_t.jpg"/>
+                                <div class="gallery-overlay"><span>Germany</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-3_t.jpg"/>
+                                <div class="gallery-overlay"><span>Modern</span></div>
+                            </div>
+                            <div>
+                                <img class="gallery-image" src="img/homepage/homepage-4_t.jpg"/>
+                                <div class="gallery-overlay"><span>London</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contact">
+                        <div style="display:table; height:100%; width:100%">
+                        <div style="display:table-cell; vertical-align:middle; width:50%; height:50%;">
+                            <form role="form" action="http://forms.brace.io/tuckerjeremyw@gmail.com" method="post">
+                                <div class="form-group">
+                                    <label for="contact-us-email">Email</label>
+                                    <input type="email" class="form-control" id="contact-us-email" placeholder="Email" name="_replyto">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-us-name">Name</label>
+                                    <input type="text" class="form-control" id="contact-us-name" placeholder="Name" name="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-us-text">Message</label>
+                                    <textarea class="form-control" rows="2" id="contact-us-text" name="Comments" placeholder="Questions, comments, or interest in hiring"></textarea>
+                                </div>
+                                <button type="submit" value="Send" class="btn btn-info">Submit</button>
+                            </form>
+                        </div></div>
+                    </div>
+
+                    <div id="bio">
+                        <div id="bio-left-column"></div>
+                        <div id="bio-right-column">
+                            <img src="img/bio.jpg" width="400">
+
+                            <p>Bio goes here</p>
+                        </div>
+                    </div>
+
+                    <div id="gallery">
+                    </div>
+
                 </div>
-            </div>
+
         </div>
         <div class="col-xs-2">
         </div>
-    </div>
+    
 </div>
 
-</body></html>
+</body>
+</html>
