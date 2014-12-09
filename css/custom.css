@@ -167,3 +167,7 @@ a:hover{
     width: auto !important;
     margin:0 auto;
 }
+
+body{
+    min-width:500px !important;
+}
