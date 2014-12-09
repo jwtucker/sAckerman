@@ -151,3 +151,19 @@ a:hover{
     width:100%;
     z-index:0;
 }
+
+#slides img{
+    max-height:100%;
+}
+
+#gallery img{
+}
+
+#gallery{
+}
+
+.resizedImage{
+    height:100% !important;
+    width: auto !important;
+    margin:0 auto;
+}
