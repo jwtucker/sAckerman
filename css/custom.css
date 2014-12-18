@@ -98,10 +98,11 @@ a:hover{
 }
 
 .gallery-overlay span{
-  position:relative;
-  top:60%;
-  color:white;
-  font-size:25px;
+    position:relative;
+    top:60%;
+    color:white;
+    font-size:25px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #contact{
@@ -111,7 +112,10 @@ a:hover{
     padding-left:20%;
     padding-right:20%;
     background-color:#dddddd;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+
 
 #bio{
     position:absolute;
@@ -170,10 +174,36 @@ a:hover{
     margin:0 auto;
 }
 
-body{
-    min-width:500px !important;
-}
 
-.test{
-    
+@media screen and (max-width: 800px){
+    .title h1{
+        font-size:12px;
+    }
+
+    .title em{
+        font-size:16px;
+    }
+
+    .icons img{
+        width:16px;
+    }
+
+    .icons{
+        margin-top:17px;
+    }
+
+    .navigation p{
+        font-size:9px;
+    }
+
+    .gallery-overlay span{
+        font-size:8px;
+        top:40%;
+    }
+
+    input, select, textarea{
+        font-size:8px !important;
+        height:30% !important;
+        margin:0;
+    }
 }
